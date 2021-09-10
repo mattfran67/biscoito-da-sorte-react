@@ -51,6 +51,10 @@ h1 {
   height: 100%;
 }
 
+.spin {
+  animation: spin .2s linear infinite alternate;
+}
+
 .message {
   padding: 12px 16px;
   border-left: 3px solid green;
@@ -87,5 +91,14 @@ button:hover {
   0% {
     opacity: .5;
     transform: scale(.5);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
   }
 }

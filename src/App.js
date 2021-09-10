@@ -25,7 +25,11 @@ const App = () => {
       </button>
       <div className="plate">
         <div className="inner-border">
-          <img src={cookie} alt="" />
+          <img
+            src={cookie}
+            alt=""
+            className={message.loading ? 'spin' : ''}
+          />
         </div>
       </div>
       {(!message.loading && message.text) &&
